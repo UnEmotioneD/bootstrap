@@ -2,7 +2,7 @@
 set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$script_dir/utils/lib.sh"
+source "$script_dir/utils/utils.sh"
 
 sudo pacman -S --noconfirm --needed fish
 
