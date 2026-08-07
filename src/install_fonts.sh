@@ -2,6 +2,7 @@
 set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+project_root="$(dirname "$script_dir")"
 source "$script_dir/utils/utils.sh"
 
 # shellcheck disable=SC2034
@@ -21,7 +22,7 @@ dir="$HOME/.local/share/fonts"
 zip="Google_Sans_Flex.zip"
 
 mkdir -p "$dir"
-cp "$script_dir/assets/fonts/Google_Sans_Flex.zip" "$dir"
+cp "$project_root/assets/fonts/Google_Sans_Flex.zip" "$dir"
 unzip "$dir/$zip" -d "$dir"/GoogleSansFlex
 rm "$dir/$zip"
 
