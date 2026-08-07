@@ -42,7 +42,7 @@ stow --restow waybar
 stow --restow wlogout
 stow --restow wofi
 stow --restow yazi
-stow --restow zsh-arch
+stow --restow zsh
 
 stow --restow --adopt applications
 stow --restow --adopt vim
